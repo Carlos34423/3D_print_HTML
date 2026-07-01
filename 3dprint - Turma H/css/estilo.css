@@ -1,0 +1,181 @@
+:root{
+    --verde:rgb(141,191,65);
+    --cinza: rgb(49,53,61);
+    --branco: rgb(255,255,255);
+}
+
+header{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.navbar{
+    background-color: var(--verde);
+}
+
+.navbar a{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.navbar-toggler{border: none; font-size: 1.5rem;}
+.navbar-toggler:focus{box-shadow: none;}
+
+.dropdown-menu{
+    background-color: var(--verde);
+    border: none;
+}
+
+.dropdown-item:hover{
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+/* start boasvindas */
+.boasvindas{
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 2px var(--branco);
+    /* padding-left: -0.75rem;
+    padding-right: -0.75rem; */
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+/* .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+.service{
+    border-top: 1rem solid var(--cinza);
+    border-bottom: 1rem solid var(--cinza);
+    background-color: rgb(224,224,224);
+}
+
+.carousel{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.carousel .img-fluid{
+    width: 100%;
+}
+
+.carousel-caption{
+    bottom: 1.75rem;
+}
+
+.carousel-caption p{
+    font-size: 1.5rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+/* .voltar{
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px 5px;
+    font-size: 20px;
+    color: var(--verde);
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+}
+
+.voltar:hover{
+    opacity: 0.8;
+} */
+
+.seta{
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    color: var(--branco);
+    font-size: 1.2rem;
+    border: 1px solid var(--branco);
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.4;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+
+.seta:hover{
+    opacity: 1;
+}
+
+.fatiadores{
+    background-image: url(../imagens/fatiador-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.scrollspy{
+    height: 30rem;
+    /* overflow: auto; */
+}
+
+.list-group-item.active{
+    background-color: #6c757d;
+}
+
+.nav-tabs{
+    border-bottom: 1px solid var(--verde);
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:active{
+    border: 2px solid var(--verde);
+}
+
+.nav-tabs .nav-link{
+    color: #000;
+    font-weight: bold;
+}
+
+.faq{
+    background-image: url(../imagens/faq.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--branco);
+    color: #000;
+}
+
+
+@media (max-width: 576px){
+    .carousel-caption{
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    .carousel-caption p, .carousel-caption .btn{
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .voltar{
+        opacity: 1;
+    }
+}
